@@ -131,9 +131,11 @@ button:disabled{
 @keyframes up {
   0%{
     top: 100%;
+    opacity: 0;
   }
   100%{
     top: 90%;
+    opacity: 1;
   }
 }
 @keyframes expand {
@@ -155,6 +157,7 @@ button:disabled{
   }
   100%{
     top: 100%;
+    opacity: 0;
   }
 }
 .nopop{
@@ -166,6 +169,7 @@ button:disabled{
 @media screen and (max-width: 768px) {
   #map{
     flex-direction: column;
+  height: calc(100vh - 150px);
   }
   .item, .icons{
     flex-direction: row;

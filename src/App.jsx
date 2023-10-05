@@ -27,6 +27,7 @@ function App() {
 		var elem = document.getElementById("map")
 		new Sortable(elem, {
 			animation: 200,
+			dragoverBubble: false,
 			handle: '.sort',
 			chosenClass: 'setup',
 			dragClass: 'setu',
@@ -97,7 +98,7 @@ function App() {
 	}
 
     return (
-		<>
+		<div className='color'>
 			<div className="head">MyColors</div>
 			<div id="map">
 				{history[pointer].map((c, key) => {
@@ -154,7 +155,7 @@ function App() {
 					<FiHeart />
 				</div>
 			</div>
-		</>
+		</div >
     );
 
 
